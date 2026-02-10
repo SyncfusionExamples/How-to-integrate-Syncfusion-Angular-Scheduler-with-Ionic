@@ -21,8 +21,7 @@ import {
 
   // Inject views + drag/drop + resize services
   providers: [
-    DayService, WeekService, WorkWeekService, MonthService, AgendaService,
-    DragAndDropService, ResizeService
+    DayService, WeekService, WorkWeekService, MonthService, AgendaService
   ],
   template: `
     <ion-header>
@@ -39,13 +38,6 @@ import {
         [selectedDate]="selectedDate"
         [views]="views"
         [eventSettings]="eventSettings"
-
-        [allowDragAndDrop]="true"
-        [allowResizing]="true"
-
-        (dragStop)="onDragStop($event)"
-        (resizeStop)="onResizeStop($event)"
-        (actionComplete)="onActionComplete($event)"
       >
       </ejs-schedule>
     </ion-content>
@@ -74,20 +66,5 @@ export class HomePage {
 
   public eventSettings: EventSettingsModel = { dataSource: this.events };
 
-  // Fires after drag and drop completes
-  onDragStop(args: any) {
-    // args.data contains updated event
-    console.log('DragStop -> Updated event:', args.data);
-  }
 
-  // Fires after resize completes
-  onResizeStop(args: any) {
-    console.log('ResizeStop -> Updated event:', args.data);
-  }
-
-  // Central place to capture add/edit/delete operations
-  onActionComplete(args: any) {
-    // You can detect event changes here and save to API/database
-    console.log('ActionComplete:', args);
-  }
 }
