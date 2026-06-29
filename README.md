@@ -1,10 +1,6 @@
 # Ionic Angular Integration with Syncfusion Scheduler
 
-## Repository Description
-This project is a mobile-first Ionic Angular application built with Standalone Components and integrated with the Syncfusion Scheduler. It provides a responsive calendar UI with support for multiple views and event creation, optimized for mobile and tablet devices through Ionic's touch-friendly interactions and layout capabilities.
-
-## Project Overview
-This repository demonstrates how to integrate the Syncfusion Angular Scheduler component into an Ionic Angular application. It showcases best practices for building responsive calendar applications with support for different scheduling views, resource management, and event handling on mobile platforms.
+This project demonstrates integrating the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) into a mobile-first Ionic Angular application built with standalone components. It showcases creating responsive, touch-friendly scheduling interfaces with support for multiple views, event management, and resource handling, providing a practical guide for building scalable calendar applications optimized for mobile and tablet platforms.
 
 ## Features
 - **Responsive Design:** Built with Ionic for seamless mobile and tablet experiences
